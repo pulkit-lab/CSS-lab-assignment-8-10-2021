@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Box Model</title>
+    <style>
+        *{
+            font-size: 30px;
+            font-family: 'Dancing Script', cursive;
+        }
+        .Title {
+            text-align: center;
+            padding: 30px;
+        }
+
+        #image {
+            width: 50%;
+            height: 50%;
+            border-radius: 50%;
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(173, 6, 56);
+        }
+
+        hr {
+            border-style: none;
+            border-top-style: dotted;
+            border-color: black;
+            border-width: 10px;
+            width: 20%;
+        }
+
+        table, td{
+            border: 2px solid black;
+        }
+
+        .table{
+            display: flex;
+            justify-content: center;
+        }
+
+        .box-model-example{
+            padding:50px;
+            background-color: green;
+            width: 50%;
+            text-align: center;
+            margin: 20px;
+        }
+
+        .box-model-example .main{
+            color: green;
+            background-color: #c5c5db;
+        }
+
+        .center-items{
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Title">
+        <h1>Box Model</h1>
+        <img id="image" src="https://media.gcflearnfree.org/content/5ef2084faaf0ac46dc9c10be_06_23_2020/box_model.png" alt="BoxModel Image">
+        <p>In CSS, the term "box model" is used when talking about design and layout. The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding. The image above illustrates the box model.</p>
+        <hr>
+        <h1>Explanation of the different parts:</h1>
+    </div>
+
+    <div class="table">
+        <table>
+            <tr>
+                <td>Content</td>
+                <td>The content of the box, where text and images appear</td> <br>
+            </tr>
+            <tr>
+                <td>Padding</td>
+                <td>Clears an area around the content. The padding is transparent</td> <br>
+            </tr>
+            <tr>
+                <td>Border</td>
+                <td>A border that goes around the padding and content</td> <br>
+            </tr>
+            <tr>
+                <td>Margin</td>
+                <td>Clears an area outside the border. The margin is transparent</td>
+            </tr>
+        </table>
+    </div>
+
+    <h1>BOX MODEL EXAMPLE</h1>
+    <div class="center-items">
+        <div class="box-model-example">
+            <div class="main">Box Model</div>
+        </div>
+    </div>
+</body>
+
+</html>
